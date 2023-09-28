@@ -20,15 +20,19 @@ int determinerGagnant(int choixUtilisateur, int choixOrdinateur) {
     }
 }
 
-void afficherResultat(int resultat) {
+int afficherResultat(int score, int resultat) {
     // Afficher le résultat du jeu
     if (resultat == 0) {
-        cout << "Égalité !";
+        cout << "Egalite !" << endl;
     } else if (resultat == 1) {
-        cout << "Vous avez gagné !";
-    } else {
-        cout << "L'ordinateur a gagné !";
+        cout << "Vous avez gagne !" << endl;
+    } else if (resultat == -1) {
+        cout << "L'ordinateur a gagne !" << endl;
+    }else{
+        cout << "Vous n'avez pas rentre un bon nombre ! " << endl;
     }
+
+    score = score + (resultat);
+    return score;
 }
 
-// void saveGame(int )

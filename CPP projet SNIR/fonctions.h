@@ -4,7 +4,7 @@
 // Prototypes des fonctions
 int genererChoixOrdinateur();
 int determinerGagnant(int choixUtilisateur, int choixOrdinateur);
-void afficherResultat(int resultat);
+int afficherResultat(int score, int resultat);
 
 #include "fonctions.cpp"
 #endif

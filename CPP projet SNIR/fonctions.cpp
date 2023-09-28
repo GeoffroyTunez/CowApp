@@ -30,3 +30,5 @@ void afficherResultat(int resultat) {
         cout << "L'ordinateur a gagné !";
     }
 }
+
+// void saveGame(int )

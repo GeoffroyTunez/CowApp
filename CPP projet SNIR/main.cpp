@@ -13,8 +13,12 @@ int main() {
     srand(time(NULL)); // Initialisation du générateur de nombres aléatoires
     int choixUtilisateur;
     int choixOrdinateur;
+    // char nomUtilisateur;
     
     // Demander à l'utilisateur de choisir entre
+    // cout << "Quelle est votre pseaudo ? : ";
+    // cin >> nomUtilisateur;
+
     cout << "Choisissez : pierre (1), papier (2) ou ciseaux (3) : ";
     cin>> choixUtilisateur;
 

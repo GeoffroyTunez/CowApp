@@ -53,4 +53,5 @@ int main() {
        monflux << "Nom de l'utilisateur : " << nomUtilisateur << endl << "Score de l'utilisateur : " << score << endl;
     }
     return 0;
+    
 }

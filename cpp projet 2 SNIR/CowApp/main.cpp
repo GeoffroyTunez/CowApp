@@ -46,14 +46,14 @@ int main()
     getchar(); 
     clearScreen();
     
-    cout << "Les bovines : " << endl;
+    cout << "Les vaches a viande : " << endl;
 
     // Création des vaches à viande
                     //nom , age , poid
-    CowMeat meatCow1("Beefy", 3, 218);
-    CowMeat meatCow2("Chunky", 2, 90);
-    CowMeat meatCow3("Sirloin", 4, 160);
-    CowMeat meatCow4("Prime", 6, 120);
+    CowMeat meatCow1("Beefy", 3, 600);
+    CowMeat meatCow2("Chunky", 2, 570);
+    CowMeat meatCow3("Sirloin", 4, 680);
+    CowMeat meatCow4("Prime", 3, 630);
 
     // Utilisation d'un tableau pour faciliter la gestion des vaches à viande
     CowMeat meatCows[] = {meatCow1, meatCow2, meatCow3, meatCow4};
@@ -70,7 +70,7 @@ int main()
         cout << endl;
         cout << "Que voulez-vous faire maintenant ? " << endl;
         cout << "1 : Traire les vaches a lait." << endl;
-        cout << "2 : S'occuper des bovines." << endl;
+        cout << "2 : S'occuper des vaches a viande." << endl;
         cout << "3 : Ne rien faire pour le moment..." << endl;
 
         cin >> choixUtilisateur;
@@ -86,14 +86,14 @@ int main()
             cout << "2 : Non." << endl;
             cin >> choixUtilisateur;
 
-            if(choixUtilisateur == 1 ) // Choix oui
+            if(choixUtilisateur == 1 )
             {
                 totalLait = TraireCows(milkCows);
                 cout << "Les vaches on produit " << totalLait << "L de lait ! " << endl;
                 cout << "Appuyez sur une touche pour continuer..." << endl;
                 getchar();
                 bonchoix = true;
-            }else if(choixUtilisateur == 2 ){ // Choix non
+            }else if(choixUtilisateur == 2 ){ 
                         
                 bonchoix = true;
             }else{
@@ -110,7 +110,7 @@ int main()
                 cout << endl;
                 cout << "Que voulez-vous faire maintenant ? " << endl;
                 cout << "1 : Voir les stats." << endl;
-                cout << "2 : S'occuper des bovines." << endl;
+                cout << "2 : S'occuper des vaches a viande." << endl;
                 cout << "3 : Ne rien faire pour le moment..." << endl;
 
                 cin >> choixUtilisateur;
@@ -128,7 +128,7 @@ int main()
                     getchar();
 
                     // clearScreen();
-                    cout << "Les bovines : " << endl;
+                    cout << "Les vaches a viande : " << endl;
                         AfficherCowsMeat(meatCows); 
                     
                     cout << "Appuyez sur une touche pour continuer..." << endl;
@@ -219,7 +219,7 @@ int main()
                 getchar();
                 cout << "Il est 13h... " << endl;
                 cout << "Que voulais vour faire ? (Sachant que vous ne pouvais faire que une activité ! )" << endl;
-                cout << "1 : S'occuper des bovines." << endl;
+                cout << "1 : S'occuper des vaches a viande." << endl;
                 cout << "2 : Traire les vaches." << endl;
                 cout << "3 : Ne rien faire. " << endl;
                 cin >> choixUtilisateur;
@@ -260,12 +260,5 @@ int main()
         }
 
     }
-    
-    
-
-
-
-
-
     return 0;
 }

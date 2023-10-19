@@ -46,11 +46,11 @@ int main() {
     strftime(dateStr, sizeof(dateStr), "%Y-%m-%d", localTime);
 
     // Créer le nom de fichier avec la date d'aujourd'hui
-    string nomFichier = "C:/Users/Geoffroy/Desktop/git geo/CPP projet SNIR/" + string(dateStr) + "_file.txt";
+    string nomFichier = "C:/Users/Geoffroy/Desktop/git geo/CPP projet SNIR/" + nomUtilisateur + "_"+ string(dateStr) + "_file.txt";
 
     ofstream monflux(nomFichier.c_str()); 
     if (monflux) {
-       monflux << "Nom de l'utilisateur : " << nomUtilisateur << endl << "Score de l'utilisateur : " << score << endl;
+       monflux << "Nom de l'utilisateur : " << nomUtilisateur << endl << "Au dout de "<< nbrparti << " parti"<<endl << "Le score de l'utilisateur est : " << score << endl;
     }
     return 0;
     
